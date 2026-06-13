@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CreatorVault | The Best Free Resources for Digital Creators</title>
+    <meta name="description" content="Discover hand-picked free tools, fonts, mockups, AI resources, and creative assets trusted by designers, developers, and content creators.">
+    <meta name="keywords" content="free design tools, UI kits, AI tools, free fonts, creator resources, mockup generator">
+    <meta name="author" content="CreatorVault">
+    
+    <meta property="og:title" content="CreatorVault | Free Creator Resources">
+    <meta property="og:description" content="Hand-picked tools, fonts, mockups, and AI resources for digital creators.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://creatorvault.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CreatorVault",
+      "url": "https://creatorvault.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://creatorvault.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div id="loader" class="loader-wrapper">
+        <div class="spinner"></div>
+    </div>
+
+    <nav id="navbar" class="glass-nav">
+        <div class="container nav-container">
+            <a href="#" class="logo">Creator<span>Vault</span></a>
+            <div class="nav-links">
+                <a href="#categories">Categories</a>
+                <a href="#trending">Trending</a>
+                <a href="#submit">Submit</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode"><i class="fa-solid fa-moon"></i></button>
+                <button class="btn btn-primary nav-cta">Join Free</button>
+                <button id="mobile-menu-btn" class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero section-padding reveal">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-content">
+            <h1 class="gradient-text">Discover the Best Free Resources for Creators</h1>
+            <p>Hand-picked tools, fonts, mockups, AI resources, and creative assets trusted by designers, developers, and content creators.</p>
+            
+            <div class="search-bar-wrapper glass-card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="main-search" placeholder="Search resources, tools, or fonts...">
+                <button class="btn btn-primary">Explore</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="stats container section-padding reveal">
+        <div class="grid stats-grid">
+            <div class="stat-card glass-card text-center">
+                <h3 class="counter" data-target="5000">0</h3>
+                <p>Resources</p>
+            </div>
+            <div class="stat-card glass-card text-center">
+                <h3 class="counter" data-target="100">0</h3>
+                <p>K+ Monthly Visitors</p>
+            </div>
+            <div class="stat-card glass-card text-center">
+                <h3 class="counter" data-target="50">0</h3>
+                <p>Categories</p>
+            </div>
+            <div class="stat-card glass-card text-center">
+                <h3>100%</h3>
+                <p>Free Access</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="categories container section-padding reveal">
+        <div class="section-header">
+            <h2>Browse by Category</h2>
+        </div>
+        <div class="grid category-grid">
+            </div>
+    </section>
+
+    <section id="trending" class="trending container section-padding reveal">
+        <div class="section-header flex-between">
+            <h2>Trending Resources</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="ai">AI Tools</button>
+            </div>
+        </div>
+        <div class="grid resource-grid" id="resource-container">
+            </div>
+    </section>
+
+    <section id="submit" class="submit-section container section-padding reveal">
+        <div class="glass-card submit-card">
+            <h2>Submit a Resource</h2>
+            <form id="submit-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Resource Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="url" placeholder="Website URL" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="ai">AI Tools</option>
+                        <option value="design">Design Assets</option>
+                        <option value="dev">Developer Tools</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Submit for Review</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="newsletter container section-padding reveal text-center">
+        <div class="hero-bg-glow"></div>
+        <h2>Get New Resources Every Week</h2>
+        <p>Join 40,000+ creators receiving our weekly curated toolkit.</p>
+        <form class="newsletter-form glass-card">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <footer class="glass-footer section-padding">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">Creator<span>Vault</span></a>
+                <p>Your ultimate directory for digital creation.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Platform</h4>
+                <a href="#">About</a>
+                <a href="#submit">Submit Resource</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="resource-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
